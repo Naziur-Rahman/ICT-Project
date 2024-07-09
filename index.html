@@ -18,10 +18,10 @@
         <div
         class="hero min-h-screen bg-contain bg-center bg-no-repeat"
         style="background-image: url(../assets/images/login-bg.png);">
-            <div class="login">
-                <div class="card  w-full  shrink-0 shadow-2xl">
+            <div class="login ">
+                <div class="card  w-full px-5 py-3 shrink-1 shadow-2xl border">
                     
-                   
+                   <div><img src="./assets/images/user-removebg-preview.png" alt="image" class="h-30 w-30 ml-3 "></div>
                       <label class="input input-bordered flex items-center gap-2 lg:mb-2 sm:mb-1 ">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -31,9 +31,9 @@
                           <path
                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                         </svg>
-                        <input type="text" class="grow" placeholder="Username" />
+                        <input type="text" id="username" class="grow" placeholder="Username" />
                       </label>
-                      <label class="input input-bordered flex items-center gap-2 ">
+                      <label class="input input-bordered flex items-center gap-2 lg:mb-2">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 16 16"
@@ -44,11 +44,17 @@
                             d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
                             clip-rule="evenodd" />
                         </svg>
-                        <input type="password" class="grow" value="password" />
+                        <input type="password" id="password"  class="grow" value="password" />
                       </label>
+                      <div class="text-white text-sm lg:mb-2">
+                        <input type="checkbox" name="check" id="check"> Remember me <span class="ml-4"><a href="">Forget Password?</a></span>
+                      </div>
+                      <div class="">
+                        <button class="btn btn-sm btn-primary text-white " id="btn-submit">Login</button>
+                      </div>
                 </div>
             </div>
-            
+            <script src="./assets/js/login.js"></script>
         </div>
     </main>
     <footer></footer>
